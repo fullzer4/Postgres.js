@@ -1,1 +1,1 @@
-# A Desktop Helper that recognisses voice and execute comands
+# A Desktop Helper that recognises voice and execute comands
