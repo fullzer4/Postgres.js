@@ -1,3 +1,7 @@
+Na primeira pergunta perguntar que ambiente eu estou:
+    pc
+    notebook
+
 desligar:
     monitor
     pc
@@ -21,7 +25,7 @@ preços:
     etherium
     placas de video
 
-tocar:
+tocar (spotify):
     todas as musicas
 
 ligar (discord):

@@ -1,6 +1,6 @@
 import speech_recognition as sr
 import pyttsx3
-from funcoes.funcoes import horaF
+from funcoes.funcoes import horaF, trabalharF
 
 rec = sr.Recognizer()
 gigi = pyttsx3.init()
@@ -27,6 +27,8 @@ def comandoUser():
         return
     elif "horas" in frase:
         horaF()
+    elif "trabalhar" in frase:
+        trabalharF()
     else:
         return
 
