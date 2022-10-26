@@ -1,0 +1,28 @@
+desligar:
+    monitor
+    pc
+
+abrir:
+    netflix
+    anya
+    hbo
+    prime | prime video
+    disney
+
+hora:
+    trabalhar
+    relaxar
+    estudar
+    reuniao
+
+preços:
+    dolar
+    bitcoin
+    etherium
+    placas de video
+
+tocar:
+    todas as musicas
+
+ligar (discord):
+    pessoas em um txt exemplo: gigi, bruno
