@@ -1,7 +1,6 @@
 import speech_recognition as sr
 import pyttsx3
-import datetime
-import hora from
+from funcoes.funcoes import horaF
 
 rec = sr.Recognizer()
 gigi = pyttsx3.init()
@@ -27,11 +26,7 @@ def comandoUser():
     if "nada" in frase:
         return
     elif "horas" in frase:
-        hora = datetime.datetime.now().strftime("%H:%M")
-        print("foi " + hora)
-        gigi.say("Ola lindo")
-        gigi.say("São"+hora)
-        gigi.runAndWait()
+        horaF()
     else:
         return
 
