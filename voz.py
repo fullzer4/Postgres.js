@@ -9,28 +9,35 @@ def executarComandos():
     try:
         with sr.Microphone(device_index=2) as mic: # 2 desktop e 8 notebook Ubuntu
             rec.adjust_for_ambient_noise(mic)
-            print("Ouvindo")
             audio = rec.listen(mic)
             frase = rec.recognize_google(audio, language="pt-BR")
+            frase = frase.lower()
             print(frase)
-            if "gigi" in frase:
-                frase = frase.replace("gigi", "")
-            return frase
-
+        return frase
     except:
         return "nada"
 
-def comandoUser():
+def comandoUser(): #funcionando
+    global frase
     frase = executarComandos()
-    print("a")
     if "nada" in frase:
         return
-    elif "horas" in frase:
-        horaF()
-    elif "trabalhar" in frase:
-        trabalharF()
+    elif "gigi" in frase:
+        frase = frase.replace("gigi", "")
+        comandosMaquina()
     else:
         return
+
+def comandosMaquina():
+    if "horas" in frase:
+        horaF()
+        print("Executou Horas")
+    elif "trabalhar" in frase:
+        # trabalharF()
+        return
+    else:
+        return
+
 
 while True:
     comandoUser()
