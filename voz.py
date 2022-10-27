@@ -7,7 +7,7 @@ gigi = pyttsx3.init()
 
 def executarComandos():
     try:
-        with sr.Microphone(device_index=2) as mic: # 2 desktop e 8 notebook Ubuntu
+        with sr.Microphone(device_index=8) as mic: # 2 desktop e 8 notebook Ubuntu
             rec.adjust_for_ambient_noise(mic)
             audio = rec.listen(mic)
             frase = rec.recognize_google(audio, language="pt-BR")
