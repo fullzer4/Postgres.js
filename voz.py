@@ -9,6 +9,7 @@ def executarComandos():
     try:
         with sr.Microphone(device_index=8) as mic: # 2 desktop e 8 notebook Ubuntu
             rec.adjust_for_ambient_noise(mic)
+            print("escutando")
             audio = rec.listen(mic)
             frase = rec.recognize_google(audio, language="pt-BR")
             frase = frase.lower()
@@ -35,9 +36,12 @@ def comandosMaquina():
     elif "trabalhar" in frase:
         # trabalharF()
         return
+    elif "estudar" in frase:
+        # trabalharF()
+        return
     else:
         return
 
-
-while True:
-    comandoUser()
+if __name__ == "__main__":
+    while True:
+        comandoUser()
