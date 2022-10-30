@@ -23,5 +23,3 @@ def noticiasF():
     toast.set_audio(audio.LoopingAlarm2, loop=False)
     toast.add_actions(label="Ver mais sobre", launch="")
     toast.show()
-
-noticiasF()

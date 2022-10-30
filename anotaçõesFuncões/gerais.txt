@@ -30,3 +30,5 @@ tocar (spotify):
 
 ligar (discord):
     pessoas em um txt exemplo: gigi, bruno
+
+dar noticias em 1h e 1h
